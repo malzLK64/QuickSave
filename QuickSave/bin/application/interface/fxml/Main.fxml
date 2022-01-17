@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox id="Sidebar" minWidth="300.0" prefHeight="720.0" prefWidth="300.0" style="-fx-background-color: #EEEEDD;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="108.0" prefWidth="300.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="110.0" prefWidth="300.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="120.0" prefWidth="300.0">
+                           <children>
+                              <Label id="logo_text" text="QuickSave">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: none;" text="My files" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="30.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView id="imageview_navigation_my-files" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: none;" text="Personal" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="5.0" left="80.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: none;" text="Devices" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="5.0" left="30.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView id="imageview_navigation_devices" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: none;" text="Recent" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="5.0" left="30.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView id="imageview_navigation_recent" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: none;" text="Favorites" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="5.0" left="30.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView id="imageview_navigation_favorites" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <AnchorPane prefHeight="150.0" prefWidth="300.0">
+               <children>
+                  <VBox prefHeight="180.0" prefWidth="300.0">
+                     <children>
+                        <Label text="Available storage:" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="50.0" top="50.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ProgressBar prefWidth="200.0" progress="0.0" VBox.vgrow="ALWAYS">
+                           <padding>
+                              <Insets bottom="5.0" left="50.0" top="5.0" />
+                           </padding>
+                        </ProgressBar>
+                        <Label text="246,1 GB of 500 GB used" VBox.vgrow="ALWAYS">
+                           <padding>
+                              <Insets left="50.0" top="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: none;" text="Settings">
+               <padding>
+                  <Insets bottom="5.0" left="30.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView id="imageview_navigation_settings" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
